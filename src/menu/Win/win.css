@@ -1,0 +1,36 @@
+.win {
+    height: 100vh;
+    width: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.win.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.win__content {
+    padding: 20px;
+    margin-top: 20%;
+    margin-bottom: auto;
+    border: blueviolet solid 3px;
+    border-radius: 25px;
+    background-color: white;
+    color: #a5a5a5;
+    width: 360px;
+    height: auto;
+    transform: scale(0.5);
+    transition: 0.4s all;
+}
+
+.win__content.active {
+    transform: scale(1);
+}
